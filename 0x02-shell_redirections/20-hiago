@@ -1,0 +1,2 @@
+#!/bin/bash
+read -p "Enter your input: " input && modified_input=$(echo "$input" | tr -d 'cC') && echo "$modified_input"
