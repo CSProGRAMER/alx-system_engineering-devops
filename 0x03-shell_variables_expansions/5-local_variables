@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Local variables:"
+for var in $(set -o posix; set); do
+    echo "$var"
+done
+
+echo "Environment variables:"
+for var in $(printenv); do
+    echo "$var"
+done
+
+echo "Functions:"
+declare -F | awk '{print $3}'
