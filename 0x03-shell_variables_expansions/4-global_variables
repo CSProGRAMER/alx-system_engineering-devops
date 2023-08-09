@@ -1,4 +1,2 @@
 #!/bin/bash
-for var in $(printenv); do
-    echo "$var"
-done
+echo 'env' > 4-global_variables
